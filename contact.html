@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page for contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="portfoilio.css">
+    <style>
+      /*Main container*/
+      main{
+      margin: 0 auto;
+      margin-bottom: 1em;
+      width:50%;
+      font-family: "Sour Gummy", sans-serif;
+      }
+      /*Main content*/
+      iframe{
+        width:100%;
+      }
+
+      .words{
+        width:100%;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      form{
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+      }
+
+      button{
+        width:20%;
+      }
+      /*Media queries*/
+      @media (max-width: 680px) {
+        header {
+          flex-direction: column;
+        }
+        nav a {
+          display: block;
+          padding: 0.5em;
+          text-align: center;
+        }
+      }
+    </style>
+</head>
+<body>
+  <!--Nav Bar-->
+    <header>
+        <img src="m.png" alt="logo" />
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <!--Map-->
+        <h1>Contact Me</h1>
+        <div class="flex-box">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.670753319075!2d-112.29541422428967!3d33.535944944815924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWest-MEC%20-%20Central%20Campus!5e0!3m2!1sen!2sus!4v1734647714050!5m2!1sen!2sus" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <!--contact form-->
+        <form>
+          <input class="words" type="text" name="name" placeholder="Your Name" required>
+          <input class="words" type="email" name="email" placeholder="Your Email" required>
+          <textarea class="words" name="message" placeholder="Your Message" rows="5"
+          required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      </main>
+      <!--footer-->
+      <footer>
+        <p>&copy; 2024 MR. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page for my projects</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="portfoilio.css">
+    <style>
+        /*Main container*/
+        .grid-container{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows: 1fr 1fr ifr;
+            margin: 1em 2em 10em;
+            grid-gap: 3em;
+        }
+        /*Main content*/
+        .box{
+            background-color: white;
+            display: inline-flex;
+            box-shadow: 10px 10px;
+            border-radius: 10px;
+        }
+
+        .min-flex{
+            display:flex; 
+        }
+
+        div > a{
+            text-decoration: none;
+            margin-top: 1em;
+            padding:.5em;
+            color: black;
+            margin-left: .5em;
+            border-radius: 10px;
+        }
+
+        h1{
+            margin-left: 1em;
+        }
+
+        .min-flex *{
+            margin:5px;
+            padding:5px;
+
+        }
+
+        .min-flex p, a{
+            background-color: #cfe0c3;
+        }
+
+        .content{
+            margin:1em;
+        }
+
+        .img{
+            width: 8em;
+            padding:.5em;
+        }
+
+        p{
+            border-radius: 10px;
+        }
+        /*Media quieries*/
+        @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+        }
+        nav a {
+          display: block;
+          padding: 0.5em;
+          text-align: center;
+        }
+        .grid-container{
+          grid-template-columns: 1fr;
+        }
+
+        h1{
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!--Nav Bar-->
+    <header>
+        <img src="m.png" alt="logo" />
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <h1>My Projects</h1>
+
+      <div class="grid-container">
+        <!--Project 1-->
+        <div class="box">
+            <img class= "img" src="form.png" alt="form">
+            <div class="content">
+                <h2>HTML Forms</h2>
+                <p>Use this from and sign up with an email.</p>
+                <div class="min-flex">
+                    <p>Media Quieries</p>
+                    <p>HTML</p>
+                    <p>Forms</p>
+                </div>
+                <br>
+                <a href="https://michael-pixel-gif.github.io/forms-assignment/" target="_blank">View</a>
+            </div>
+        </div>
+        <!--Project 2-->
+        <div class="box">
+            <img class= "img" src="reasturant.png" alt="flexbox">
+            <div class="content">
+                <h2>Reasturant Webpage</h2>
+                <p>A responsive reasturant webpage using flex properties</p>
+                <div class="min-flex">
+                    <p>FlexBox</p>
+                    <p>HTML</p>
+                    <p>img</p>
+                </div>
+                <br>
+                <a href="https://michael-pixel-gif.github.io/restaurant-webpage/" target="_blank">View</a>
+            </div>
+        </div>
+        <!--Project 3-->
+        <div class="box">
+            <img class= "img" src="collage.png" alt="photo collage">
+            <div class="content">
+                <h2>Photo Collage</h2>
+                <p>A responsive photo collage using CSS grid</p>
+                <div class="min-flex">
+                    <p>Grid</p>
+                    <p>HTML</p>
+                    <p>Responsive</p>
+                </div>
+                <br>
+                <a href="https://michael-pixel-gif.github.io/collage/" target="_blank">View</a>
+            </div>
+        </div>
+        <!--Project 4-->
+        <div class="box">
+            <img class= "img" src="resume.png" alt="resume">
+            <div class="content">
+                <h2>Resume layout</h2>
+                <p>Use of CSS to make a simple layout of a resume.</p>
+                <div class="min-flex">
+                    <p>CSS</p>
+                    <p>HTML</p>
+                    <p>responsive</p>
+                </div>
+                <br>
+                <a href="https://michael-pixel-gif.github.io/resume/" target="_blank" >View</a>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+      <footer>
+        <p>&copy; 2024 MR. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
