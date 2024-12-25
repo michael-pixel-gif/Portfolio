@@ -43,6 +43,22 @@
     .skills ul{
         list-style-type: none;
     }
+
+    #contact{
+        word-wrap: break-word;
+    }
+
+    /*Media quieries*/
+    @media (max-width: 866px) {
+        header {
+          flex-direction: column;
+        }
+        nav a {
+          display: block;
+          padding: 0.5em;
+          text-align: center;
+        }
+    }
     </style>
 </head>
 <body>
@@ -61,7 +77,7 @@
         <section class="heading">
             <h1>Michael Rodriguez</h1>
             <p>West-MEC / Highschool student</p>
-            <p>Email:m.rodriguez59313@gmail.com | Phone:(623) 341-8836 | Location: Phoenix, AZ</p>
+            <p id="contact">Email:m.rodriguez59313@gmail.com | Phone:(623) 341-8836 | Location: Phoenix, AZ</p>
         </section>
         <!--Summary-->
         <section class="Summary">
