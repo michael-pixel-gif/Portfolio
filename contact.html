@@ -16,6 +16,7 @@
       width:50%;
       font-family: "Sour Gummy", sans-serif;
       }
+
       /*Main content*/
       iframe{
         width:100%;
@@ -29,14 +30,18 @@
         text-align: center;
       }
 
+      /*Form*/
       form{
         display: flex;
         align-items: end;
         flex-direction: column;
+        margin-bottom: 2.1em;
       }
 
       button{
-        width:20%;
+        width:40%;
+        border-radius: 10px;
+        word-wrap: break-word;
       }
       /*Media queries*/
       @media (max-width: 680px) {
@@ -48,13 +53,17 @@
           padding: 0.5em;
           text-align: center;
         }
+        button{
+          width:20%;
+          border-radius: 10px;
+        }
       }
     </style>
 </head>
 <body>
   <!--Nav Bar-->
     <header>
-        <img src="m.png" alt="logo" />
+        <img src="./M.png" alt="logo" />
         <nav>
           <a href="index.html">Home</a>
           <a href="projects.html">Projects</a>
